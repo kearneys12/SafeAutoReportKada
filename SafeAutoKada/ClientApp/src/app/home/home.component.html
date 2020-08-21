@@ -1,0 +1,15 @@
+<header>
+  <h1>SafeAuto Driving Report Generator Kada</h1>
+  <div class="header-img"></div>
+</header>
+<div class="button">
+  <button (click)="GetReport()">Click Here To Generate Report</button>
+</div>
+<table class="datatable">
+  
+    <tr *ngFor="let data of Report">
+      <td>{{data.name}}: {{data.miles}} miles @ {{data.milesPerHour}} mph</td>
+    </tr>
+ 
+</table>
+<footer>This Report Generator was completed by Steven Kearney on August 21st, 2020</footer>
